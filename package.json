@@ -1,0 +1,23 @@
+{
+    "name": "coinbase-paymaster-service",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "mint": "NODE_OPTIONS=\"--loader ts-node/esm\" node src/mint.ts",
+        "account": "NODE_OPTIONS=\"--loader ts-node/esm\" node src/account.ts"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.5.0",
+        "npm": "^10.9.0",
+        "typescript": "^5.6.3",
+        "viem": "2.x"
+    },
+    "devDependencies": {
+        "ts-node": "^10.9.2"
+    }
+}
