@@ -4,7 +4,7 @@ import { client } from "./viem_client.js";
 import config from "./config.js";
 import { abi } from "./abi.js";
 
-const owner = privateKeyToAccount(`0x${config.private_key}`);
+const owner = privateKeyToAccount(`${config.private_key}` as `0x${string}`);
 
 console.log("owner:", owner);
 
